@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.DataContext>
+        <local:ViewModel/>
+    </Page.DataContext>
+    
+    <Grid>
+        <syncfusion:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
+                ItemsSource="{Binding StockPriceDetails}"
+                XBindingPath="Date">
+            <syncfusion:SfDateTimeRangeNavigator.Content>
+                <syncfusion:SfLineSparkline ItemsSource="{Binding StockPriceDetails}" 
+                                            Margin="20"  
+                                            YBindingPath="High">
+                </syncfusion:SfLineSparkline>
+            </syncfusion:SfDateTimeRangeNavigator.Content>
+        </syncfusion:SfDateTimeRangeNavigator>
+    </Grid>
+</Page>
