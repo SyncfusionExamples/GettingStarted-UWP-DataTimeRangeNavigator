@@ -13,7 +13,7 @@ A `SfDateTimeRangeNavigator` is composed of the following elements:
 
 ## Requirements
 
-- Visual Studio 2019 or later
+- Visual Studio 2022 or later
 - Windows 10 SDK
 - Syncfusion UWP Controls (SyncfusionControls for UWP XAML)
 
