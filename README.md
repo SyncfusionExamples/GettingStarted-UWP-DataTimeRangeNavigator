@@ -13,7 +13,7 @@ A `SfDateTimeRangeNavigator` is composed of the following elements:
 
 ## Requirements
 
-- Visual Studio 2019 or later
+- Visual Studio 2022 or later
 - Windows 10 SDK
 - Syncfusion UWP Controls (SyncfusionControls for UWP XAML)
 
@@ -163,7 +163,8 @@ this.MainGrid.Children.Add(navigator);
 ## Output
 
 Once the project is run, the `SfDateTimeRangeNavigator` will display a line sparkline chart inside it, along with the higher and lower level label bars showing year and month formats. The resizable scrollbar allows zooming and scrolling through the data.
-<img width="1919" height="1008" alt="image" src="https://github.com/user-attachments/assets/a3fc55f8-1505-49e8-890d-5ade6e2b42f2" />
+
+<img width="700" height="400" alt="image" src="DateTimeNavigatorGettingStarted.png" />
 
 ## Reference
 
